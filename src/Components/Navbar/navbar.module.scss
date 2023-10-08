@@ -1,0 +1,82 @@
+:root {
+  --background-color: #333;
+}
+nav {
+  background-color: var(--background-color);
+  padding: 5px 0;
+  color: white;
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .iconContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      .fa_archway {
+        font-size: 20px;
+      }
+      h5:last-child {
+        font-size: 14px;
+      }
+    }
+    .languageContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button:first-child {
+        background-color: var(--background-color);
+        border: 1px white solid;
+        border-radius: 4px;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        .fa_heart {
+          color: red;
+          padding-left: 5px;
+        }
+      }
+      .dropdownContainer {
+        position: relative;
+        display: inline-block;
+        .fa_language {
+          font-size: 32px;
+          cursor: pointer;
+        }
+        .dropdown {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          min-width: 110px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          color: black;
+          right: 20px;
+          top: 40px;
+          background-color: #f2f0e7;
+          li {
+            list-style: none;
+            border-bottom: 1px solid black;
+            padding: 5px;
+            font-size: 13px;
+            cursor: pointer;
+            &:hover {
+              background-color: white;
+            }
+          }
+          li:last-child {
+            border: none;
+          }
+        }
+        &.active {
+          .dropdown {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

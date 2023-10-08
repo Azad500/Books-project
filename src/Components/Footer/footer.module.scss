@@ -1,0 +1,62 @@
+footer {
+  padding: 30px 0;
+  .upSideInFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .openLibrary,
+    .discover,
+    .Develop,
+    .help,
+    .language {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      h5 {
+        padding-bottom: 10px;
+      }
+      a {
+        font-size: 13px;
+        color: rgb(21, 87, 169);
+      }
+      .twoIcons {
+        font-size: 35px;
+        i {
+          cursor: pointer;
+        }
+        i:nth-child(2) {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .downSideInFooter {
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.363);
+    padding-top: 20px;
+    .iconAndTextContainer {
+      display: flex;
+      gap: 10px;
+      .fa_archway {
+        font-size: 30px;
+      }
+      .textElement {
+        font-size: 12px;
+        a {
+          color: rgb(21, 87, 169);
+        }
+      }
+    }
+    .versionButton {
+      width: 200px;
+      font-size: 10px;
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.449);
+      border-radius: 5px;
+      cursor: pointer;
+      a {
+        color: rgb(21, 87, 169);
+      }
+    }
+  }
+}

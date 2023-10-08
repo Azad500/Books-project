@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+  .logInButton {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logInButton {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

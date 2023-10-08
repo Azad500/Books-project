@@ -1,0 +1,102 @@
+.hamburgersContainer {
+  .hamburgersIcon {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    max-height: 650px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black;
+    right: 0;
+    top: 50px;
+    background-color: #f2f0e7;
+    overflow-y: scroll;
+    border-radius: 5px;
+    animation: slideInRightToLeft 500ms ease-in-out forwards;
+    transform-origin: top right;
+    @keyframes slideInRightToLeft {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    img {
+      width: 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    h3 {
+      border-bottom: 2px rgba(0, 0, 0, 0.502) solid;
+      padding: 5px 10px;
+      &:first-child {
+        padding-top: 15px;
+      }
+    }
+    .buttonsContainer {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        padding: 5px 40px;
+        border-radius: 5px;
+        border: 2px rgb(21, 87, 169) solid;
+        cursor: pointer;
+      }
+      .logInButton {
+        color: rgb(21, 87, 169);
+      }
+      .signInButton {
+        background-color: rgb(21, 87, 169);
+        color: white;
+      }
+    }
+    .informationsContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      a {
+        text-decoration: none;
+        border-bottom: 1px rgba(0, 0, 0, 0.281) solid;
+        padding: 10px 0;
+        color: black;
+        &:hover {
+          background-color: white;
+        }
+      }
+      .librariansPortal {
+        border: none;
+      }
+    }
+  }
+  &.active {
+    .dropdown {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 960px) {
+  .hamburgersContainer {
+    .dropdown {
+      top: 0;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      max-height: 100%;
+      overflow-y: visible;
+      h3 {
+        font-size: 15px;
+      }
+      .informationsContainer {
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

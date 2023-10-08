@@ -1,0 +1,12 @@
+.addButton {
+  padding: 2px 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(21, 87, 169);
+  border: none;
+  border-radius: 2px;
+  &:active {
+    transform: scale(0.95);
+  }
+}

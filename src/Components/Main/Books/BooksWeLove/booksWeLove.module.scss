@@ -1,0 +1,53 @@
+.allBooksContainer {
+  padding: 10px 0;
+  background-color: white;
+  border: 1px black solid;
+  border-bottom: none;
+  border-top: none;
+  position: relative;
+  .booksWeLoveElement {
+    padding: 30px 0 10px 10px;
+    display: flex;
+    align-items: end;
+    background-color: white;
+    u {
+      font-size: 17px;
+      cursor: pointer;
+      color: rgb(21, 87, 169);
+    }
+  }
+  .onlyBooksElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4c998;
+    .booksCards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      img {
+        width: 120px;
+        height: 180px;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 10px;
+      }
+      .blueButton {
+        width: 130px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(21, 87, 169);
+        color: white;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.95);
+        }
+        &:hover {
+          background-color: rgb(3, 34, 72);
+        }
+      }
+    }
+  }
+}

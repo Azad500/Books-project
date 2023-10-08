@@ -1,0 +1,11 @@
+@media screen and (max-width: 959px) {
+  .myBooksInDownTools {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 960px) {
+  .myBooksInDownTools {
+    display: none;
+  }
+}

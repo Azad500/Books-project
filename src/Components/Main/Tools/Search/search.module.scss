@@ -1,0 +1,65 @@
+.searchContainer {
+  .searchIcon {
+    display: block;
+    font-size: 20px;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+  .searchInput {
+    display: none;
+  }
+}
+// ----------------
+@media screen and (min-width: 568px) {
+  .searchContainer {
+    .searchIcon {
+      display: none;
+    }
+    .searchInput {
+      display: flex;
+      .typesOfBooks {
+        width: 50px;
+        padding: 10px 0;
+        border: 1px rgba(0, 0, 0, 0.473) solid;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: none;
+        background: transparent;
+        text-align: center;
+      }
+      .inputAndSearchTags {
+        position: relative;
+        display: inline-block;
+        input {
+          border: 1px rgba(0, 0, 0, 0.473) solid;
+          border-right: none;
+          padding: 15px 25px 15px 5px;
+          background: #f9f9f9;
+        }
+        .searchIconInInput {
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+          cursor: pointer;
+          background: #f9f9f9;
+        }
+      }
+      .barcodeContainer {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        background-color: white;
+        border: 1px rgba(0, 0, 0, 0.473) solid;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

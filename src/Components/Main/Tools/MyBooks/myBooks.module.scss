@@ -1,0 +1,11 @@
+@media screen and (max-width: 959px) {
+  .myBooksText {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .myBooksText {
+    display: block;
+    cursor: pointer;
+  }
+}

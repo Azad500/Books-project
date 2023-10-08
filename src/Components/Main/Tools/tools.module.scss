@@ -1,0 +1,47 @@
+.toolsContainer {
+  .upTools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    .openLibrary {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 50px;
+      }
+      p {
+        border-top: 2px rgba(0, 0, 0, 0.392) solid;
+        border-bottom: 2px rgba(0, 0, 0, 0.392) solid;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .toolsContainer {
+    .upTools {
+      .openLibrary {
+        gap: 10px;
+        img {
+          width: 80px;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .toolsContainer {
+    .downTools {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #aca37c;
+      padding: 10px;
+    }
+  }
+}

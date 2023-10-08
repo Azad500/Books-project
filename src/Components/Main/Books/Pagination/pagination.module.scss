@@ -1,0 +1,27 @@
+// ---------------pagination-------------
+.arrowsContainer {
+  .arrow {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 10px;
+    background-color: rgb(21, 87, 169);
+    color: white;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  .disabled {
+    background-color: gray;
+  }
+  .leftArrow {
+    left: 0;
+    top: 50%;
+  }
+  .rightArrow {
+    right: 0;
+    top: 50%;
+  }
+}
