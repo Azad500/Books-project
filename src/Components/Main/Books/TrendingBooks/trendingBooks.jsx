@@ -8,7 +8,7 @@ export function TrendingBooks() {
   const [currentPage, setCurrentPage] = useState(1);
   const [allBooks, setAllBooks] = useState(0);
   const titleTrending = "Add New Trending Books";
-  const booksPerPage = 6;
+  const [booksPerPage, setBooksPerPage] = useState(6);
 
   useEffect(() => {
     GetBooksFetch();
@@ -49,6 +49,7 @@ export function TrendingBooks() {
       <Pagination
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        setBooksPerPage={setBooksPerPage}
         allBooks={allBooks}
         booksPerPage={booksPerPage}
       />

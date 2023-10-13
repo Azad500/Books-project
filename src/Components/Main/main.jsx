@@ -1,4 +1,3 @@
-import { Footer } from "../Footer/footer";
 import { BooksWeLove } from "./Books/BooksWeLove/booksWeLove";
 import { ClassicBooks } from "./Books/ClassicBooks/classicBooks";
 import { TrendingBooks } from "./Books/TrendingBooks/trendingBooks";
@@ -14,7 +13,6 @@ export function Main() {
       <TrendingBooks />
       <ClassicBooks />
       <BooksWeLove />
-      <Footer />
     </section>
   );
 }

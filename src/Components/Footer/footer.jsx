@@ -2,7 +2,7 @@ import styles from "./footer.module.scss";
 
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.upSideInFooter}>
         <div className={styles.openLibrary}>
           <h5>Open Library</h5>
@@ -38,8 +38,8 @@ export function Footer() {
           <a href="">Report a Problem</a>
           <a href="">Suggesting Edits</a>
           <div className={styles.twoIcons}>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-square-github"></i>
+            <i className={"fa - brands fa - square - twitter"}></i>
+            <i className={"fa-brands fa-square-github"}></i>
           </div>
         </div>
         <div className={styles.language}>
