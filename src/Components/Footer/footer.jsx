@@ -38,7 +38,7 @@ export function Footer() {
           <a href="">Report a Problem</a>
           <a href="">Suggesting Edits</a>
           <div className={styles.twoIcons}>
-            <i className={"fa - brands fa - square - twitter"}></i>
+            <i className={"fa-brands fa-square-twitter"}></i>
             <i className={"fa-brands fa-square-github"}></i>
           </div>
         </div>
